@@ -1,0 +1,12 @@
+<div class="reminder" id="reminder-{{ reminder.id }}">
+    <div class="reminder-content">
+        <h2 class="reminder-content-title">{{ reminder.title }}</h2>
+        <button class="reminder-buttons-delete" onclick="deleteReminder('{{ reminder.id }}')"><img class="reminder-buttons-delete-icon" src="../../../assets/delete.png" alt="delete"></button>
+    </div>
+    <p class="reminder-content-description">{{ reminder.description }}</p>
+    <div class="reminder-info">
+        <p class="reminder-info-createdAt">{{ createdAt }}</p>
+        <p class="reminder-info-spacer">•</p>
+        <p class="reminder-info-delay">{{ delay }}</p>
+    </div>
+</div>

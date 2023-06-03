@@ -1,0 +1,84 @@
+body {
+    background-color: var(--dark);
+    overflow-x: hidden;
+}
+
+.reminders {
+    place-items: center;
+    display: grid;
+}
+
+.noReminders {
+    margin-top: 20px;
+    font-weight: 400;
+    color: var(--elight);
+}
+
+.reminder {
+    width: 400px;
+    background-color: var(--light);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 7.5px;
+}
+
+.reminder-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reminder-content-title {
+    font-size: 21px;
+    font-weight: 400;
+    color: white;
+}
+
+.reminder-content-description {
+    /* width: 385px; */
+    word-break: break-all;
+    font-size: 15px;
+    color: white;
+    margin-top: 7.5px;
+}
+
+.reminder-buttons-delete {
+    height: 32.5px;
+    width: 32.5px;
+    background-color: transparent;
+    border: none;
+    transition-duration: 200ms;
+}
+
+.reminder-buttons-delete:hover {
+    background-color: var(--grey);
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.reminder-buttons-delete-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.reminder-info {
+    display: flex;
+    place-items: center;
+    margin-top: 15px;
+}
+
+.reminder-info-createdAt {
+    font-size: 15px;
+    color: var(--elight);
+    margin-right: 15px;
+}
+
+.reminder-info-spacer {
+    color: var(--elight);
+}
+
+.reminder-info-delay {
+    font-size: 15px;
+    color: var(--elight);
+    margin-left: 15px;
+}
