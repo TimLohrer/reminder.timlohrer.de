@@ -35,7 +35,7 @@ async function dashboard() {
         }
         _reminders.push(reminder_component(reminder, (new Date(reminder.createdAt)).toString().split(' ').slice(0, 5).join(' ').split(':').slice(0, 2).join(':'), formattedTime));
     });
-    if (document.getElementById('ROOT').innerHTML.length < 1) {
+    if (_reminders.length < 1) {
         _reminders.push(noReminders_component());
     }
     document.getElementById('ROOT').innerHTML = reminders_component(_reminders);
