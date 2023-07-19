@@ -3,7 +3,7 @@ const defaultAvatar_component = (color) => { return `<div class="user-avatar" st
 // noReminders
 const noReminders_component = () => { return `<h2 class="noReminders">You currently don't have any active reminders.</h2>` };
 // reminder
-const reminder_component = (reminder,createdAt,delay) => { return `<div class="reminder" id="reminder-${reminder.id}"><div class="reminder-content">        <h2 class="reminder-content-title">${reminder.title}</h2>        <button class="reminder-buttons-delete" onclick="deleteReminder('${reminder.id}')"><img class="reminder-buttons-delete-icon" src="../../../assets/delete.png" alt="delete"></button></div><p class="reminder-content-description">${reminder.description}</p><div class="reminder-info">        <p class="reminder-info-createdAt">${createdAt}</p>        <p class="reminder-info-spacer">•</p>        <p class="reminder-info-delay">${delay}</p></div></div>` };
+const reminder_component = (reminder,createdAt,delay) => { return `<div class="reminder" id="reminder-${reminder.id}"><div class="reminder-content">        <h2 class="reminder-content-title">${reminder.title}</h2>        <button class="reminder-buttons-delete" onclick="deleteReminder('${reminder.id}')" title="Delete"><img class="reminder-buttons-delete-icon" src="../../../assets/delete.png" alt="delete"></button></div><p class="reminder-content-description">${reminder.description}</p><div class="reminder-info">        <p class="reminder-info-createdAt">${createdAt}</p>        <p class="reminder-info-spacer">•</p>        <p class="reminder-info-delay">${delay}</p></div></div>` };
 // reminders
 const reminders_component = (reminders) => { return `<div class="reminders">    ${reminders.join(' ')}</div>` };
 // signInButton

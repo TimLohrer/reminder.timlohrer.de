@@ -4,10 +4,6 @@ const db = new MongoClient(mongoUri).db('database')
 const { Router } = require('express');
 const remindersRouter = Router();
 
-// remindersRouter.get('/', async (req, res) => {
-//     db.collection('reminders').find({ userId })
-// });
-
 remindersRouter.get('/:userId/', async (req, res) => {
     const { userId } = req.params;
     try {
